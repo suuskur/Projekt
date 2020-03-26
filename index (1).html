@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Elektrihinna andmebaas ja tabel</title>
+   </head>   
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  
+ <link href="https://www.simonbattersby.com/simon.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="https://www.simonbattersby.com/css/print.css" rel="stylesheet" type="text/css" media="print"/>
+<link rel="apple-touch-icon" href="http://www.simonbattersby.com/blog/simple-jquery-image-crossfade/icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.simonbattersby.com/blog/simple-jquery-image-crossfade/"/>
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.simonbattersby.com/blog/simple-jquery-image-crossfade/icon.png"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body style="background-color:white;">
+
+  
+<style>
+<style type="text/css">
+  
+.mySlides {display:none;}
+    h1 {color: blue;}
+    p {color: red;}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+</style>
+   
+<!-- Pealkiri algus-->
+  
+   <body class="responsive web">
+
+
+<div id="outer">
+<div id ="container">
+
+<div id="header"><h1> <b>ELEKTRIHINDADE ANDMEBAAS</b> </h1>
+   </div>
+<!-- Pealkiri lõpp-->
+  
+  <body>
+
+<!-- Vasak menüü algus -->
+   
+<div id="left_col">
+
+<div id="nav-menu">
+	<ul>
+		<li><a href="http://tarkvaraarendus-suuskur90664.codeanyapp.com/" class="home" title="Hinnad">Hinnad</a></li>
+		<li><a href="http://tarkvaraarendus-suuskur90664.codeanyapp.com/" class="web2" title="Graafikud">Graafikud</a>
+			<ul class="web">
+			<li><a href="" class="web3" title="Menu 3 link">Menu 3</a></li>
+			<li><a href="" class="web3" title="Menu 4 link">Menu 4</a></li>
+						</ul>
+		</li>
+    <li><a href="http://tarkvaraarendus-suuskur90664.codeanyapp.com/" class="web2" title="Statistika">Statistika</a>
+		<li><a href="" class="contact" title="Kontaktid">Võta ühendust</a></li>
+
+	</ul>
+</div>
+  </div>
+<!-- Vasak menüü lõpp -->
+
+  
+  
+ <!-- Põhi leht algus --> 
+  <p>
+  
+  <div id="maintext">
+ 
+  <div class="post" id="post-803">
+    
+         
+             
+<!-- Banneri algus --> 
+          
+<div class="w3-content w3-display-container" style="width:35%">
+ <img class="mySlides" src="https://balkangreenenergynews.com/wp-content/uploads/2015/06/CRO_Cropex-Nord-Pool-Spot-develop-power-market.jpg" style="width:100%"> 
+  <div class="top-left"><h4>SPONSORED BY:</h4></div>
+  
+  <img class="mySlides" src="https://www.ttu.ee/public/u/ulikool/Tunnusgraafika/TalTech_Gradient_print.jpg" alt="custom_html_banner2" style="width:100%">
+  <div class="text-block">
+     <button class="w3-button w3-black w3-display-left" style="width:4%" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" style="width:4%" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+    </div>
+  
+    
+    
+  <script>
+ var slideIndex = 1;
+ showDivs(slideIndex);
+ function plusDivs(n) {
+ showDivs(slideIndex += n);
+  }
+ function showDivs(n) {
+ var i;
+ var x = document.getElementsByClassName("mySlides");
+ if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
+ (i = 0; i < x.length; i++) {x[i].style.display = "none";}
+ x[slideIndex-1].style.display = "block"; }
+</script>
+
+   
+  
+ 
+</p>
+    
+<!-- Banneri lõpp --> 
+  
+  
+  
+ <div class="post" id="post-803" >
+  
+
+  
+<form>
+ 
+  <label for="kpaev"> <h3> Palun sisesta kuupäev:  <input type='text' name="kuupäev" placeholder="dd.mm.yyyy"id='id'> </h3>
+      </label>
+  <p>
+  <!-- inputile vajutamine kaivitab send funktsiooni -->
+  <input type='button' onclick='send()' value='Lähtesta'>
+  </p> 
+   
+     
+</form>
+   
+   <div class="w3-table w3-table-all w3-text-brown" >
+     
+  
+     <!-- Tabel-->
+     
+     <h3>
+       Hinnad on esitatud kujul EUR/MWh
+     </h3>
+     <table>
+      
+      <tr>
+        <td>Kuupäev</td>
+        <td>Eesti</td>
+        <td>Läti</td>
+        <td>Leedu</td>
+        <td>Soome</td>
+          </tr>
+ </table>  
+   </div>
+    
+   
+
+     
+<!-- ans on koht, kuhu handleresult paneb tulemuse -->
+<div id="ans"></div>
+
+<!-- nyyd tuleb javascripti programm tulemuste kuvamiseks -->
+  
+<script>
+
+// funktsioon, mis pannakse kaima send nupule vajutades
+
+  function send() {
+  var val,url;
+  // vota vormilt vaartus
+  val=document.getElementById('id').value;  
+  // pane kokku url, mis avatakse
+  // flaski jaoks oma arvutis
+  url="http://harjutus-suuskur90664.codeanyapp.com:3000/getdata?key=Kuup&val="+val;
+  //url="http://localhost:3000/getdata?key=c1&val="+val;
+
+  
+  
+  // dijkstras
+  //url="http://dijkstra.cs.ttu.ee/~tammet/cgi-bin/serve.py?key=c1&val="+val;
+  
+  // kysi sellelt urlilt andmeid ja kaivita handleresult
+  fetch(url, {
+    method: "get"
+  }).then(r=>r.json()).then(handleresult);
+}
+
+// funktsioon, mis pannakse kaima, kui server annab resultaadi
+// argument r on resultaat json formaadis
+
+function handleresult(r) {
+  console.log(r);
+  s="<p>";
+      
+  // tryki r debugimiseks konsoolile
+  console.log("r:",r);
+  // tee tsykkel yle koiki ridade
+  for(var i=0; i<r.length; i++) {
+    console.log(i,r[i]);
+    var elem=r[i]; 
+    line=""
+    // tee tsykkel yle yhe rea koigi tulpade
+    for (var j=0; j<elem.length; j++) {
+      line=line+elem[j]+" "
+    }    
+    // lopetame yhe rea
+    line=line+"<br>"   
+    // liidame rea kogutulemusele    
+    s=s+line+"<p>";
+  }
+  // pane kogutulemus otse html sisse
+  document.getElementById('ans').innerHTML=s;
+}
+  
+  
+</script>
+  
+  
+<h3>Otsingu täpsustus:</h3>
+ 
+
+
+<label for="Eesti"Elektri hind:</label>
+
+      <select id="Riik">
+          <option value="Eesti">Eesti</option>
+          <option value="Läti">Läti</option>
+          <option value="Leedu">Leedu</option>
+          <option value="Soome">Soome</option>
+</select>
+ 
+  </div>
+   </p>
+<p>
+  
+  <br>
+ 
+    <div class={position:relative;right:30px;bottom:0}>
+  
+<a href="http://nordpoolspot.com"> <img src="https://balkangreenenergynews.com/wp-content/uploads/2015/06/CRO_Cropex-Nord-Pool-Spot-develop-power-market.jpg" align="right" width="200" height="100"></a>  
+ 
+  
+   
+  </p>
+  <p style="position:relative;bottom:0;left:650px;font-size:48px">
+&#128512;
+</p>
+    <img style="position:relative;bottom:0;left:400px" src="http://getnovy.com/UnderConstruction.png">
+   
+    </div>
+  </body>
+  
+     
